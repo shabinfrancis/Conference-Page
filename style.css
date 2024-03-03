@@ -51,11 +51,6 @@ body{
     align-items: center;
     background-color: transparent!important;
 }
-/* .nav-link{
-    font-weight: 800 !important;
-    display: flex !important;
-    justify-content: space-evenly !important;
-} */
 nav{
     position: fixed;
 }
@@ -78,8 +73,8 @@ nav{
 }
 .nav-item button{
     color: black;
-    font-size: large;
-    font-weight: 300;
+    font-size: large !important;
+    font-weight: 600 !important;
     box-shadow: 0 2px 4px rgb(14, 25, 71);
     margin-right: 0.125rem;
 }
