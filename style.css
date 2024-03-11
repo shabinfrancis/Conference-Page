@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
 }
 body{
+    height: 100vh;
     background-color: rgb(82, 107, 150) !important;
     color: whitesmoke !important;
     overflow: auto;
 }
 .commentary{
+    width: 100vw;
     background-color: purple !important;
     font-style: italic;
     font-weight: 500;
@@ -20,7 +24,7 @@ body{
 .commentary li{
     display: inline;
 }
-.overlay{
+/* .overlay{
     position: absolute;
     z-index: 9999;
     top: 0;
@@ -28,7 +32,7 @@ body{
     width: 100vw;
     height: 100vh;
     animation: tempBackground 4s linear 1;
-}
+} */
 @keyframes tempBackground{
     from{
         background-color: rgba(255, 255, 255, 0.5);
@@ -44,34 +48,188 @@ body{
     align-items: center;
     background-color: rgb(82, 107, 150) !important;
 }
-.navbar{
-    width: 100vh;
+nav{
+    height: 80px;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+nav img{
+    width: 160px;
+    margin-left: 1rem;
+    position: absolute;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #0f1111;
+    transform: scaleX(0) !important;
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1) !important;
+    cursor: pointer !important;
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    position: absolute;
+    color: #0f1111;
+    font-size: 30px;
+    line-height: 40px;
+    margin-right: 40px;
+    display: none; 
+}
+label #btn i:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media(max-width: 1118px){
+    nav img{
+        left: 8%;
+    }
+}
+@media (max-width: 944px){
+    nav img{
+        left: 6%;
+        top: 10px;
+        width: 130px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+@media(max-width: 860px){
+    label #btn{
+        display: block !important;
+        position: absolute;
+        float: right;
+        margin-right: 40px;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(82, 107, 150);
+        top: 80px;
+        bottom: 10px;
+        left: 0;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .content h3,img,p{
+        display: none;
+    }
+    .carousal-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+}
+/* .navbar{
+    width: 100vh;;
+    height: 60px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent!important;
+} 
+.navbar a{
+    color: rgb(255, 217, 1);
+    text-decoration: none;
+    font-size: 1.25rem;
+    
+    box-shadow: 0 2px 4px rgb(14, 25, 71);
 }
-nav{
-    position: fixed;
+.navbar a:hover{
+    cursor: pointer !important;
+    box-shadow: 0 4px 8px rgb(14, 25, 71) !important;
+} */
+
+/* .dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 10px;
+    overflow: hidden;
+} */
+
+/* @media (max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
 }
-.main{
+li{
+    list-style: none;
+} */
+/* .main{
     background: url(clg.png);
     height: 80vh;
     width: 100%;
     background-size: cover;
 }
 .main h1{
-    color: rgb(120, 70, 24) !important;
+    color: rgb(120, 70, 24) !important;;
     position: relative;
     left: 300px;
     font-size: 40px;
     font-weight: 800;
-}
-.collapse{
-    display: flex;
+} */
+/* .toggle_btn{
+    color: #0f1111 !important;
+    font-size: 2rem;
+    cursor: pointer !important;
+} */
+
+/* .collapse{
+    display: flex;;
     justify-content: space-between;
-}
-.nav-item button{
+} */
+/* .nav-item button{
     color: black;
     font-size: large !important;
     font-weight: 600 !important;
@@ -79,10 +237,10 @@ nav{
     margin-right: 0.125rem;
 }
 .nav-item button:hover{
-    opacity: 5;
+    opacity: 5;;
     font-weight: 600;
     box-shadow: 0 2px 8px rgb(14, 25, 71) !important;
-}
+} */
 .row{
     display: flex;
     justify-content: space-evenly;
