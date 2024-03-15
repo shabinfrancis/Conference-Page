@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +32,7 @@
       
   </div> -->
   <nav>
+    <div class="nav-content">
     <input type="checkbox" id="check">
     <label for="check" class="checkbox">
       <i class="fa-solid fa-bars" id="btn"></i>
@@ -39,35 +40,24 @@
     </label>
     <img src="sies_gst_logo.jpg" alt="pic">
     <ul>
-      <li class="top"><a href="#">HOME</a></li>
-      <li class="top"><a href="#">SERVICES</a></li>
-      <li class="top"><a href="#">CONTACT</a></li>
-      <li class="top"><a href="#">LOGIN</a></li>
+      <li class="top"><a href="#home">HOME</a></li>
+      <li class="top"><a href="#events">EVENTS</a></li>
+      <li class="top"><a href="#contact">CONTACT</a></li>
+      <li class="top"><a href="http://localhost:8080/upload">UPLOAD</a></li>
     </ul>
+  </div>
   </nav>
-  <!-- <div class="main">
-     <nav class="navbar navbar-expand-lg sticky-md-top">
-            <div class="container container-fluid">
-              <div class="collapse navbar-collapse">
-                <div class="navbar-nav me-auto sm-2">
-                  <div class="nav-item">
-                    <button class="nav-link" href="#">Home</a>
-                  </div>
-                  <div class="nav-item">
-                    <button class="nav-link" href="#">Login</a>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          </nav>
-        <h1>S.I.E.S. Graduate School of Technology</h1>
-  </div> -->
+  <div class="home"  id="home">
+    <div class="heading">
+      <span><h1>S.I.E.S.</h1></span><span><h1>GRADUATE SCHOOL OF TECHNOLOGY</h1></span>
+    </div>
+  </div>
     <div class="content">
         <div class="row mt-4">
             <div class="container container-fluid col-md-4">
                 <h3>Message from the Principal</h3>
                 <br><br>
-                <img src="principal.jpg" alt="image">
+                <img  src="principal.jpg" alt="image">
             </div>
             <div class="container container-fluid col-lg-8">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -136,7 +126,7 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="updates container-fluid">
+    <div class="updates container-fluid" id="events">
       <h1>Events & Updates</h1>
       <div class="row">
         <div class="owl-carousel owl-theme">
@@ -158,7 +148,7 @@
 
           <div class="row mt-4">
               <div class="col-lg-6">
-                  <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                  <div style=" text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
                       <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
                         <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Nerul%20SIES%20Graduate%20School%20of%20Technology+(SIES%20Graduate%20School%20of%20Technology)&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.de/'>Masterarbeit schreiben lassen</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=db607a2bfa910589253dd70adf996c51bacd674f'></script>
                       </div>
@@ -186,7 +176,7 @@
     </section>
        
     <footer>
-      <h5 class="footer-start">Back to Top</h5>
+      <h5 class="footer-start"><a href="#home">Back to Top</a></h5>
       <div class="nav-footer">
         <div class="footer1">
           <p>faculty details</p>

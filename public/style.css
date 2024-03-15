@@ -7,8 +7,8 @@
 }
 body{
     height: 100vh;
-    background-color: rgb(82, 107, 150) !important;
-    color: whitesmoke !important;
+    background-color: aliceblue;
+    color: black !important;
     overflow: auto;
 }
 .commentary{
@@ -24,15 +24,19 @@ body{
 .commentary li{
     display: inline;
 }
-/* .overlay{
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    animation: tempBackground 4s linear 1;
-} */
+.home span h1{
+    font-family: sans-serif !important;
+    font-weight: 800 !important;
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+.home .heading{
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
 @keyframes tempBackground{
     from{
         background-color: rgba(255, 255, 255, 0.5);
@@ -51,12 +55,11 @@ body{
 nav{
     height: 80px;
     width: 100vw;
-    position: relative;
-    background-color: rgb(255, 255, 255);
+    position: sticky;
+    background-color: #dbdbdb;
 }
 nav img{
     width: 160px;
-    margin-left: 1rem;
     position: absolute;
 }
 nav ul{
@@ -132,7 +135,6 @@ label #btn i:hover{
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgb(82, 107, 150);
         top: 80px;
         bottom: 10px;
         left: 0;
@@ -146,7 +148,12 @@ label #btn i:hover{
     nav ul li a{
         font-size: 20px;
     }
+    nav img{
+        display: block;
+        margin: 0px;
+    }
     .content h3,img,p{
+        margin-top: 0%;
         display: none;
     }
     .carousal-image{
@@ -159,88 +166,6 @@ label #btn i:hover{
         max-height: 50vh;
     }
 }
-/* .navbar{
-    width: 100vh;;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent!important;
-} 
-.navbar a{
-    color: rgb(255, 217, 1);
-    text-decoration: none;
-    font-size: 1.25rem;
-    
-    box-shadow: 0 2px 4px rgb(14, 25, 71);
-}
-.navbar a:hover{
-    cursor: pointer !important;
-    box-shadow: 0 4px 8px rgb(14, 25, 71) !important;
-} */
-
-/* .dropdown{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background-color: white;
-    opacity: 0.5;
-    border-radius: 10px;
-    overflow: hidden;
-} */
-
-/* @media (max-width: 992px){
-    .navbar .links{
-        display: none;
-    }
-    .navbar .toggle_btn{
-        display: block;
-    }
-    .dropdown{
-        display: block;
-    }
-}
-li{
-    list-style: none;
-} */
-/* .main{
-    background: url(clg.png);
-    height: 80vh;
-    width: 100%;
-    background-size: cover;
-}
-.main h1{
-    color: rgb(120, 70, 24) !important;;
-    position: relative;
-    left: 300px;
-    font-size: 40px;
-    font-weight: 800;
-} */
-/* .toggle_btn{
-    color: #0f1111 !important;
-    font-size: 2rem;
-    cursor: pointer !important;
-} */
-
-/* .collapse{
-    display: flex;;
-    justify-content: space-between;
-} */
-/* .nav-item button{
-    color: black;
-    font-size: large !important;
-    font-weight: 600 !important;
-    box-shadow: 0 2px 4px rgb(14, 25, 71);
-    margin-right: 0.125rem;
-}
-.nav-item button:hover{
-    opacity: 5;;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgb(14, 25, 71) !important;
-} */
 .row{
     display: flex;
     justify-content: space-evenly;
@@ -252,10 +177,16 @@ li{
     align-items: center;
 }
 .content{
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center; 
-    padding: 2rem;
-    margin: 4rem;
+    padding: 2rem; 
+    margin: 4rem; 
+    overflow: hidden;
+}
+.content p{
+    margin-right: 32px;
 }
 .carousal-image{
     display: flex;
@@ -285,8 +216,9 @@ li{
 }
 .updates-card{
     border-radius: 2rem !important;
-    color: whitesmoke !important;
-    background-color: transparent !important;
+    color: black !important;
+    background-color: #478bb8 !important;
+    background-size: contain !important; 
 }
 .updates-card img{
     border-radius: 2rem !important;
@@ -301,6 +233,9 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer-start a{
+    color: white;
 }
 .nav-footer {
     width: 100%;
